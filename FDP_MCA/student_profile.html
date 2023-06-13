@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="shortcut icon" href="school_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body onload=profilePageOnLoad()>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="home.html" class="navbar-brand"><img src="school_logo.png" alt="School logo" width="30" height="24">
+                Spring Flowers School
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse navbar-text" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="timetable.html">Time Table</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exam_result.html">Exam Result</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="extra_activity.html">Extra Activity</a></li>
+                </ul>
+                <div class="d-flex dropdown m-2 text-center">
+                    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" id="profile-btn">
+                        
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="student_profile.html" class="dropdown-item active">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="#" class="dropdown-item" onclick=logout()>Logout</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heading -->
+    <h2 class="m-5 text-primary-emphasis">Student Profile</h2>
+
+    <!-- Top card -->
+    <div class="card text-center m-3">
+        <img src="school_logo.png" class="card-img-top" alt="..." style="height: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title" id="name"></h5>
+            <p class="card-text" id="id"></p>
+        </div>
+    </div>
+
+    <!-- Student & Parent info -->
+    <div class="row m-2">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <h5 class="card-header text-bg-primary">Student Information</h5>
+                <div class="card-body">
+                    <p class="card-text" id="dob">DOB:<br>29-May-2000</p>
+                    <p class="card-text" id="address">Address:<br>Bangalore - 560 042</p>
+                    <p class="card-text" id="phone">Phone:<br>1234567890</p>
+                    <p class="card-text" id="email">Email:<br>dikshitha@example.com</p>
+                    <p class="card-text" id="bloodGroup">Blood group:<br>B+</p>
+                    <p class="card-text" id="class">Class:<br>10</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <h5 class="card-header text-bg-primary">Parent Information</h5>
+                <div class="card-body">
+                    <p class="card-text" id="fatherName">Father's name:<br></p>
+                    <p class="card-text" id="fatherPhone">Father's mobile number:<br></p>
+                    <p class="card-text" id="fatherEmail">Father's Email:<br></p>
+                    <p class="card-text" id="motherName">Mother's name:<br></p>
+                    <p class="card-text" id="motherPhone">Mother's mobile number:<br></p>
+                    <p class="card-text" id="motherEmail">Mother's Email:<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Footer -->
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-secondary-subtle">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+          <div class="row">
+              <div class="col-lg-3 mb-3">
+                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/">
+                      <span class="fs-5">Spring Flowers School</span>
+                  </a>
+                  <ul class="list-unstyled small">
+                      <li class="mb-2">Designed and built with all the love in the world by Dikshitha.
+                  </ul>
+              </div>
+              <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                  <h5>Links</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="home.html">Home</a></li>
+                      <li class="mb-2"><a href="timetable.html">Time table</a></li>
+                      <li class="mb-2"><a href="exam_result.html">Results</a></li>
+                      <li class="mb-2"><a href="extra_activity.html">Activities</a></li>
+                      <li class="mb-2"><a href="#">Profile</a></li>
+                  </ul>
+              </div>
+              <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                  <h5>Location</h5>
+                  <p><a href="https://www.google.com/maps/place/SPRING+FLOWERS+SCHOOL/@22.9814953,72.6391202,17z/data=!4m14!1m7!3m6!1s0x395e870a96d16a2d:0xc89fbc0cd6728628!2sSPRING+FLOWERS+SCHOOL!8m2!3d22.9814904!4d72.6417005!16s%2Fg%2F11rvc67b93!3m5!1s0x395e870a96d16a2d:0xc89fbc0cd6728628!8m2!3d22.9814904!4d72.6417005!16s%2Fg%2F11rvc67b93">View location</a></p>
+              </div>
+              <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                  <h5>Contact Us</h5>
+                  <p>Phone:<br>+91 23415 67098</p>
+                  <p>Email:<br>springflowersschool@education.in</p>
+              </div>
+          </div>
+      </div>
+    </footer>
+      
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

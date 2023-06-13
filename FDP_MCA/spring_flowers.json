@@ -1,0 +1,94 @@
+{
+    "student": [
+        {
+            "id": "SFS1",
+            "username": "Dikshitha P Jain",
+            "password": "D12345678",
+            "DOB": "29th May 2008",
+            "email": "dikshithajain123@example.com",
+            "phone": "1234567890",
+            "bloodGroup": "B+",
+            "address": "Bangalore",
+            "class": 10,
+            "fatherName": "Praveen S",
+            "fatherEmail": "praveens123@email.com",
+            "fatherPhone": "0987654321",
+            "motherName": "Sangeetha P",
+            "motherEmail": "sangeetha123@gmail.com",
+            "motherPhone": "4567382910",
+            "marks": {
+                "maths": 99,
+                "physics": 99,
+                "chemistry": 99,
+                "biology": 99,
+                "history": 99,
+                "geography": 99,
+                "english1": 99,
+                "english2": 99,
+                "hindi": 99,
+                "computer": 99
+
+            }
+        },
+        {
+            "id": "SFS2",
+            "username": "Akshitha J",
+            "password": "12345678A",
+            "DOB": "29th Dec 2009",
+            "email": "akshitha@example.com",
+            "phone": "1029384756",
+            "bloodGroup": "B+",
+            "address": "Bangalore",
+            "class": 9,
+            "fatherName": "Praveen S",
+            "fatherEmail": "praveens123@email.com",
+            "fatherPhone": "0987654321",
+            "motherName": "Sangeetha P",
+            "motherEmail": "sangeetha123@gmail.com",
+            "motherPhone": "4567382910",
+            "marks": {
+                "maths": 100,
+                "physics": 59,
+                "chemistry": 48,
+                "biology": 70,
+                "history": 92,
+                "geography": 66,
+                "english1": 78,
+                "english2": 60,
+                "hindi": 90,
+                "computer": 100
+
+            }
+        },
+        {
+            "id": "SFS3",
+            "username": "Priyanka",
+            "password": "P12345678",
+            "DOB": "3rd Mar 2008",
+            "email": "priya@gmail.com",
+            "phone": "5647382901",
+            "bloodGroup": "AB-",
+            "address": "Bangalore",
+            "class": 10,
+            "fatherName": "Suresh H",
+            "fatherEmail": "Hsuresh@gmail.com",
+            "fatherPhone": "1234567899",
+            "motherName": "Sanjana S",
+            "motherEmail": "sanjana12345@yahoo.com",
+            "motherPhone": "9988224756",
+            "marks": {
+                "maths": 30,
+                "physics": 49,
+                "chemistry": 55,
+                "biology": 75,
+                "history": 72,
+                "geography": 58,
+                "english1": 49,
+                "english2": 60,
+                "hindi": 40,
+                "computer": 88
+
+            }
+        }
+    ]
+}
